@@ -16,6 +16,14 @@ Login: `elastic // changeme`
 
 ES and Kibana are only accessible via localhost on the docker host.
 
+## Startup Errors
+
+If ES does not start up properly, try running `docker-compose` without the `-d` option.
+
+If you see something like `max virtual memory areas vm.max_map_count [65530] likely too low, increase to at least [262144]`
+
+Then running `sysctl -w vm.max_map_count=262144` should resolve the issue.
+
 # Shutdown
 
 `$ sudo docker-compose down`
