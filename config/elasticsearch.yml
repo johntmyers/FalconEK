@@ -6,7 +6,11 @@ discovery.zen.minimum_master_nodes: 1
 
 # discovery.zen.ping.unicast.hosts: ["10.0.0.1", "10.0.0.2", "10.0.0.3"]
 
-xpack.security.authc:
-  anonymous:
-    roles: superuser
-    authz_exception: true
+#xpack.security.authc:
+ # anonymous:
+  #  roles: superuser
+   # authz_exception: true
+
+http.cors.enabled: true
+http.cors.allow-origin: "*"
+http.cors.allow-methods: "*"

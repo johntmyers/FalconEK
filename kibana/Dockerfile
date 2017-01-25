@@ -1,8 +1,8 @@
-FROM kibana:5.0.0
+FROM kibana:5.1.2
 
 RUN apt-get update && apt-get install -y netcat
 
-RUN kibana-plugin install x-pack
+# RUN kibana-plugin install x-pack
 
 COPY entrypoint.sh /tmp/entrypoint.sh
 RUN chmod +x /tmp/entrypoint.sh

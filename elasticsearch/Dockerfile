@@ -1,5 +1,5 @@
-FROM elasticsearch:5.0.0
+FROM elasticsearch:5.1.2
 
-RUN bin/elasticsearch-plugin install x-pack
+# RUN bin/elasticsearch-plugin install x-pack
 
 CMD ["elasticsearch"]
